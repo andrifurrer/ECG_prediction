@@ -1,0 +1,16 @@
+name: transformer
+channels:
+  - defaults
+dependencies:
+  - numpy
+  - ipykernel
+  - notebook
+  - torchvision
+  - pytorch
+  - pandas
+  - matplotlib
+  - scipy
+  - conda-forge::wfdb
+  - anaconda::scikit-learn
+  - conda-forge::dtw-python
+prefix: /Users/andrifurrer/anaconda3/envs/transformer

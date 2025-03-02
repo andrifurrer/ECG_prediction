@@ -1,0 +1,18 @@
+# Ignore specific files or folders within the included directories
+.DS_Store
+data/InEar
+data/Finger
+data/Wrist
+data/Wrist_csv/
+data/Processed
+
+# Ignore IDE and editor files
+.idea/         
+.vscode/       
+
+# Ignore Python-specific files
+__pycache__/   
+*.py[cod]      
+
+# Ignore Jupyter notebook checkpoints 
+.ipynb_checkpoints/

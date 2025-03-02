@@ -1,0 +1,18 @@
+Training_loss: [0.22286916 0.20077677 0.19715726 0.19554919 0.19463499 0.19407146
+ 0.19357742 0.19311459 0.19269472 0.19251116 0.19231443 0.19213451]
+Validation_loss: [0.30462214 0.30184823 0.30511296 0.30534005 0.30698279 0.31216657
+ 0.30604729 0.30597112 0.31425896 0.31129003 0.31794471 0.31538889]
+Test_loss: [0.21803264]
+Epochs: [ 1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11. 12.]
+Euclidean Distance: 219.98619079589844
+DTW Distance: 0.16735534525860546
+Pearson Correlation: -0.035553502054202324
+Spearman Correlation: -0.04172208826065551
+MSE: 0.04753822460770607
+MAE: 0.1673623025417328
+RMSE: 0.2180326282978058
+NRMSE: 0.1090163141489029
+NMAE: 0.0836811512708664
+Parameters: {'subject': 'all', 'action': 'walk', 'sequence_length': 1000, 'sequence_step_size': 100, 'subset': 1, 'd_model': 144, 'input_dim': 7, 'output_dim': 1, 'nhead': 6, 'num_layers': 4, 'batch_size': 16, 'dropout': 0.1, 'num_epochs': 300, 'learning_rate': 0.001, 'ppg_scaling_factor': 100}
+General: {'model_name': 'wrist_all_walk_imu', 'model_type': 'encoder', 'dataset': 'Wrist', 'normalization': 'subject_wise', 'imu': True, 'train': True, 'eval': True, 'use_dataloader': True, 'train_shuffling': True, 'filter': 1, 'validation_set_subjects': 1, 'test_set_subjects': 1, 'random_seed': 17}
+Output: {'model_family': 'wrist_encoder_point2point_imu/', 'results': '../results/', 'checkpoints': '../models/checkpoints/', 'model_summary': '../models/model_summary/'}

@@ -1,0 +1,43 @@
+parameters:
+  subject: 'all' # all or list of numbers: 'all', [1, 2, 3, 4, 5]
+  action: 'all' # 'sit', 'run', 'walk' or for wrist dataset 'walk', 'run', 'low_resistance_bike', 'high_resistance_bike' or 'all': if a single action is applied training happens only on this action (from the subjects selected above) 
+  sequence_length: 1000 # The number of samples that create together an input sequences
+  sequence_step_size: 100 # The number of samples that the sliding window slides to the right for the next input sequence
+  subset: 1 # From the entire selected data for the model, defined above through the parameters 'subject' and 'action', which percentage of the data should be feeded to the model as input.
+  # Range is from 0-1, 'subset: 0.1' corresponds to 10% of the data, starting with the first samples and steadily going through the samples sequentially, up to the last sample for 'subset: 1', that is 100%
+  d_model: 144  # Embedding dimension
+  input_dim: 9  # 3 / 9 (red, green, IR PPG) + (6*IMU) for Finger and 1 / 10 (PPG) + (9*IMU)
+  output_dim: 1  # 1 ECG target per time step
+  nhead: 6  # Attention heads
+  num_layers: 4  # Number of transformer layers
+  batch_size: 16  # Batch size
+  dropout: 0.1 # Dropout of the model
+  num_epochs: 300 # The number of epochs the model should train (early stopping is enabled)
+  learning_rate: 0.001 # The inital learning rate applied (learning rate scheduler is enabled)
+  ppg_scaling_factor: 100 # Refactering of the ppg signals to compare them with the actual and predicted ecg signals
+
+
+general:
+  model_name: 'finger_all_all_rerun' # The name of the model
+  model_type: 'encoder' # Encoder model or Encoder_Decoder model (depreciated)
+  dataset: 'Finger' # Wrist or Finger
+  normalization: 'subject_wise' # Global or (subject, action) pair wise
+  imu: True # True if the imu data should be used
+  train: False # Set to 0 == False if the model should not be trained
+  eval: True # Set to 0 == False if the model should not be evaluated
+  use_dataloader: True  # Set to false to not use DataLoader
+  train_shuffling: True # Set the shuffling in the train_loader true or false
+  filter: 1 # Set to 1 == True if a bandpass filter is applied to the input dataset or set to 0 == False if no filter is applied
+  validation_set_subjects: 3 # Number of subjects withheld from training for validation
+  test_set_subjects: 3 # Number of subjects withheld from training for testing
+  random_seed: 17 # Standard: 42. Choose random seed for train/val/test subject split
+
+
+output:
+  model_family: "finger_encoder_point2point_imu_test/" # Selects the classification of the training / evaluation run
+  results: "../results/" # Location of the results
+  checkpoints: "../models/checkpoints/" # Saved checkpoints
+  model_summary: "../models/model_summary/" # A summary of the model is saved here
+
+
+

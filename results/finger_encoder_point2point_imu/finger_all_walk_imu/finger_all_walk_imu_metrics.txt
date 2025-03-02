@@ -1,0 +1,18 @@
+Training_loss: [0.25531802 0.23560099 0.2300325  0.22496213 0.2204873  0.21534722
+ 0.20878167 0.20003782 0.1948884  0.19039035 0.18617311]
+Validation_loss: [0.25520509 0.26297584 0.26511505 0.2673187  0.28363773 0.2832433
+ 0.28434256 0.28493544 0.28180495 0.29081061 0.29074702]
+Test_loss: [0.30126837]
+Epochs: [ 1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11.]
+Euclidean Distance: 813.0338745117188
+DTW Distance: 0.23000340063865607
+Pearson Correlation: 0.10825777990896747
+Spearman Correlation: 0.11583724225884125
+MSE: 0.09076263010501862
+MAE: 0.23013538122177124
+RMSE: 0.3012683689594269
+NRMSE: 0.15063418447971344
+NMAE: 0.11506769061088562
+Parameters: {'subject': 'all', 'action': 'walk', 'sequence_length': 1000, 'sequence_step_size': 100, 'subset': 1, 'd_model': 144, 'input_dim': 9, 'output_dim': 1, 'nhead': 6, 'num_layers': 4, 'batch_size': 16, 'dropout': 0.1, 'num_epochs': 300, 'learning_rate': 0.001, 'ppg_scaling_factor': 100}
+General: {'model_name': 'finger_all_walk_imu', 'model_type': 'encoder', 'dataset': 'Finger', 'normalization': 'subject_wise', 'imu': True, 'train': True, 'eval': True, 'use_dataloader': True, 'train_shuffling': True, 'filter': 1, 'validation_set_subjects': 3, 'test_set_subjects': 3, 'random_seed': 17}
+Output: {'model_family': 'finger_encoder_point2point_imu/', 'results': '../results/', 'checkpoints': '../models/checkpoints/', 'model_summary': '../models/model_summary/'}

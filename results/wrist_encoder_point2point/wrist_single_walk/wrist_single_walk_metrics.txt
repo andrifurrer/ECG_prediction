@@ -1,0 +1,23 @@
+Training_loss: [0.25878191 0.20395857 0.19170722 0.18503106 0.18055771 0.17749441
+ 0.1748462  0.17306368 0.17167634 0.17021503 0.16907783 0.16850704
+ 0.16782863 0.16715018 0.16661778 0.16614474 0.16582203 0.16547088
+ 0.16512454 0.16482295 0.16458431 0.16444632]
+Validation_loss: [0.13950796 0.12694719 0.11940885 0.11584132 0.11434167 0.11405736
+ 0.11557791 0.11325637 0.1133706  0.11320575 0.11329622 0.11243767
+ 0.11246488 0.11251137 0.1135532  0.1125695  0.11459799 0.11230769
+ 0.11231945 0.11241897 0.11226999 0.1124903 ]
+Test_loss: [0.18092014]
+Epochs: [ 1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11. 12. 13. 14. 15. 16. 17. 18.
+ 19. 20. 21. 22.]
+Euclidean Distance: 49.21560287475586
+DTW Distance: 0.12499903382329157
+Pearson Correlation: 0.0028713249321267774
+Spearman Correlation: 0.008358684931016198
+MSE: 0.032732103019952774
+MAE: 0.1249186173081398
+RMSE: 0.18092015385627747
+NRMSE: 0.1126570776104927
+NMAE: 0.07778550684452057
+Parameters: {'subject': [3], 'action': 'walk', 'sequence_length': 1000, 'sequence_step_size': 100, 'subset': 1, 'd_model': 144, 'input_dim': 1, 'output_dim': 1, 'nhead': 6, 'num_layers': 4, 'batch_size': 16, 'dropout': 0.1, 'num_epochs': 300, 'learning_rate': 0.001, 'ppg_scaling_factor': 100}
+General: {'model_name': 'wrist_single_walk', 'model_type': 'encoder', 'dataset': 'Wrist', 'normalization': 'subject_wise', 'train': True, 'eval': True, 'use_dataloader': True, 'train_shuffling': True, 'filter': 1, 'validation_set_subjects': 1, 'test_set_subjects': 1, 'random_seed': 17}
+Output: {'model_family': 'wrist_encoder_point2point/', 'results': '../results/', 'checkpoints': '../models/checkpoints/', 'model_summary': '../models/model_summary/'}

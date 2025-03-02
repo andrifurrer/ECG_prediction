@@ -1,0 +1,27 @@
+Training_loss: [0.26366094 0.23130164 0.22624399 0.22183861 0.21917604 0.2138256
+ 0.20785414 0.20497906 0.20397042 0.20190591 0.20161313 0.20108663
+ 0.19995008 0.19949555 0.19929865 0.19838791 0.19814876 0.19804975
+ 0.19731086 0.19707713 0.19691123 0.19691925 0.19669886 0.1965732
+ 0.19641306 0.19649547 0.19635983 0.1961937  0.19629602 0.19612513
+ 0.19588147 0.19588538 0.19558774 0.19560964 0.19552048 0.19555537]
+Validation_loss: [0.37789842 0.35231334 0.35412243 0.37428662 0.33264092 0.36672902
+ 0.34250319 0.32426876 0.32116818 0.32976049 0.34743011 0.3140339
+ 0.31820199 0.31920049 0.32453898 0.32375622 0.32895589 0.31896725
+ 0.32078207 0.31170112 0.3104122  0.31784427 0.32980147 0.30986199
+ 0.31729499 0.30231553 0.31027317 0.31517187 0.33762714 0.31135979
+ 0.31754887 0.31378049 0.30824348 0.31594416 0.32113186 0.31415364]
+Test_loss: [0.25937298]
+Epochs: [ 1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11. 12. 13. 14. 15. 16. 17. 18.
+ 19. 20. 21. 22. 23. 24. 25. 26. 27. 28. 29. 30. 31. 32. 33. 34. 35. 36.]
+Euclidean Distance: 261.6968994140625
+DTW Distance: 0.20663377639026226
+Pearson Correlation: -0.006570700314709502
+Spearman Correlation: -0.0054719532322503065
+MSE: 0.06727432459592819
+MAE: 0.20643137395381927
+RMSE: 0.2593729496002197
+NRMSE: 0.12968647480010986
+NMAE: 0.10321568697690964
+Parameters: {'subject': 'all', 'action': 'walk', 'sequence_length': 1000, 'sequence_step_size': 100, 'subset': 1, 'd_model': 144, 'input_dim': 1, 'output_dim': 1, 'nhead': 6, 'num_layers': 4, 'batch_size': 16, 'dropout': 0.1, 'num_epochs': 300, 'learning_rate': 0.001, 'ppg_scaling_factor': 100}
+General: {'model_name': 'wrist_all_walk', 'model_type': 'encoder', 'dataset': 'Wrist', 'normalization': 'subject_wise', 'train': True, 'eval': True, 'use_dataloader': True, 'train_shuffling': True, 'filter': 1, 'validation_set_subjects': 1, 'test_set_subjects': 1, 'random_seed': 17}
+Output: {'model_family': 'wrist_encoder_point2point/', 'results': '../results/', 'checkpoints': '../models/checkpoints/', 'model_summary': '../models/model_summary/'}

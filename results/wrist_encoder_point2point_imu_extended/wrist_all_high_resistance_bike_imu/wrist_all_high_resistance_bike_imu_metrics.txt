@@ -1,0 +1,20 @@
+Training_loss: [0.31906343 0.26280245 0.25591806 0.2524696  0.25032297 0.24878196
+ 0.24765727 0.24704246 0.24658448 0.24610625 0.24585329 0.24559985
+ 0.24547158 0.24536154]
+Validation_loss: [0.2794688  0.2699798  0.26767206 0.26723206 0.26707956 0.26755527
+ 0.26748475 0.26771659 0.26743484 0.2676762  0.26865107 0.2679767
+ 0.267932   0.26815712]
+Test_loss: [0.32902327]
+Epochs: [ 1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11. 12. 13. 14.]
+Euclidean Distance: 277.04461669921875
+DTW Distance: 0.3060428986302405
+Pearson Correlation: -0.005225297395745168
+Spearman Correlation: -0.01802194667378625
+MSE: 0.10825631022453308
+MAE: 0.3058946132659912
+RMSE: 0.3290232717990875
+NRMSE: 0.16451163589954376
+NMAE: 0.1529473066329956
+Parameters: {'subject': 'all', 'action': 'high_resistance_bike', 'sequence_length': 1000, 'sequence_step_size': 100, 'subset': 1, 'd_model': 144, 'input_dim': 10, 'output_dim': 1, 'nhead': 6, 'num_layers': 4, 'batch_size': 16, 'dropout': 0.1, 'num_epochs': 300, 'learning_rate': 0.001, 'ppg_scaling_factor': 100}
+General: {'model_name': 'wrist_all_high_resistance_bike_imu', 'model_type': 'encoder', 'dataset': 'Wrist', 'normalization': 'subject_wise', 'imu': True, 'train': True, 'eval': True, 'use_dataloader': True, 'train_shuffling': True, 'filter': 1, 'validation_set_subjects': 1, 'test_set_subjects': 1, 'random_seed': 17}
+Output: {'model_family': 'wrist_encoder_point2point_imu_extended/', 'results': '../results/', 'checkpoints': '../models/checkpoints/', 'model_summary': '../models/model_summary/'}

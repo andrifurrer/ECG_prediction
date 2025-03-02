@@ -1,0 +1,23 @@
+Training_loss: [0.20459451 0.13758126 0.12038492 0.10938428 0.10155345 0.09566955
+ 0.09085798 0.08716378 0.08431816 0.0819331  0.08003315 0.07826658
+ 0.07676954 0.07555047 0.07459997 0.07381681 0.07310452 0.07245035
+ 0.07198246]
+Validation_loss: [0.15126641 0.13634402 0.13105161 0.1281645  0.12733771 0.12661056
+ 0.12661792 0.12625101 0.12588881 0.12588783 0.12580687 0.12587658
+ 0.12582263 0.12568875 0.12572047 0.12609208 0.12566705 0.12570681
+ 0.12575634]
+Test_loss: [0.19886523]
+Epochs: [ 1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11. 12. 13. 14. 15. 16. 17. 18.
+ 19.]
+Euclidean Distance: 55.540035247802734
+DTW Distance: 0.1210700217664103
+Pearson Correlation: -0.007156763631643377
+Spearman Correlation: -0.016195178434118128
+MSE: 0.039547380059957504
+MAE: 0.12077909708023071
+RMSE: 0.19886523485183716
+NRMSE: 0.09943261742591858
+NMAE: 0.060389548540115356
+Parameters: {'subject': [3], 'action': 'run', 'sequence_length': 1000, 'sequence_step_size': 100, 'subset': 1, 'd_model': 144, 'input_dim': 1, 'output_dim': 1, 'nhead': 6, 'num_layers': 4, 'batch_size': 16, 'dropout': 0.1, 'num_epochs': 300, 'learning_rate': 0.001, 'ppg_scaling_factor': 100}
+General: {'model_name': 'wrist_single_run', 'model_type': 'encoder', 'dataset': 'Wrist', 'normalization': 'subject_wise', 'train': True, 'eval': True, 'use_dataloader': True, 'train_shuffling': True, 'filter': 1, 'validation_set_subjects': 1, 'test_set_subjects': 1, 'random_seed': 17}
+Output: {'model_family': 'wrist_encoder_point2point/', 'results': '../results/', 'checkpoints': '../models/checkpoints/', 'model_summary': '../models/model_summary/'}

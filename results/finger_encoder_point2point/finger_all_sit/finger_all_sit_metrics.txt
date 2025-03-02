@@ -1,0 +1,18 @@
+Training_loss: [0.30218345 0.25797221 0.22463863 0.19823702 0.17830825 0.16343261
+ 0.15232438 0.1416081  0.13802612 0.13497232 0.13273183]
+Validation_loss: [0.26019627 0.30152395 0.31666273 0.2980026  0.28639749 0.29457822
+ 0.32026061 0.30741653 0.31691229 0.31019929 0.32662579]
+Test_loss: [0.28330827]
+Epochs: [ 1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11.]
+Euclidean Distance: 440.7242126464844
+DTW Distance: 0.22123141429036705
+Pearson Correlation: 0.02899102653185462
+Spearman Correlation: -0.31057925239840967
+MSE: 0.08026355504989624
+MAE: 0.22152778506278992
+RMSE: 0.2833082377910614
+NRMSE: 0.1416541188955307
+NMAE: 0.11076389253139496
+Parameters: {'subject': 'all', 'action': 'sit', 'sequence_length': 1000, 'sequence_step_size': 100, 'subset': 1, 'd_model': 144, 'input_dim': 3, 'output_dim': 1, 'nhead': 6, 'num_layers': 4, 'batch_size': 16, 'dropout': 0.1, 'num_epochs': 300, 'learning_rate': 0.001, 'ppg_scaling_factor': 100}
+General: {'model_name': 'finger_all_sit', 'model_type': 'encoder', 'dataset': 'Finger', 'normalization': 'subject_wise', 'train': True, 'eval': True, 'use_dataloader': True, 'train_shuffling': True, 'filter': 1, 'validation_set_subjects': 1, 'test_set_subjects': 1, 'random_seed': 17}
+Output: {'model_family': 'finger_encoder_point2point/', 'results': '../results/', 'checkpoints': '../models/checkpoints/', 'model_summary': '../models/model_summary/'}
